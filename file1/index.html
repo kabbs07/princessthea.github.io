@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Practice</title>
+</head>
+<body>
+    <section class="content" id="contents">
+        <div class="container">
+            
+            <button id="myBtn" onclick="playVid()" type="button"><a href="#videos" class="cont-text">Press this button</a> </button>
+            
+            </div>
+    </section>
+    <section class="video" id="videos" >
+        <div class="vid-container">
+
+            <h1 class="title">The Singing Pug </h1>
+            <video id="play"  loop>
+              
+                <source src="/videos/336489812_5572027969569678_6712999240938942287_n.mp4" type="video/mp4">
+       
+            </video>
+            <button id="myBtn" onclick="stopVid()" type="button
+            "><a href="#contents" class="text">Scroll Back up</a> </button>
+        </div>
+    </section>
+
+
+        <script>
+            var vid  = document.getElementById("play");
+
+            function playVid(){
+                vid.play();
+            }
+            function stopVid(){
+                vid.pause();
+            }
+        </script>
+        
+    
+    
+</body>
+</html>
